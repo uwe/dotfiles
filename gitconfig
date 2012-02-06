@@ -6,10 +6,22 @@
 [color]
 	branch      = auto
 	diff        = auto
+        ui          = auto
 	interactive = auto
 	status      = auto
 [user]
 	name  = Uwe
 	email = uwe@uwevoelker.de
+[push]
+        default = tracking
+[pull]
+        rebase = true
+[grep]
+        lineNumber     = true
+        extendedRegexp = true
+[log]
+        decorate = short
+[apply]
+        whitespace = nowarn
 [review "review.source.android.com"]
 	username = uwevoelker
