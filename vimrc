@@ -20,6 +20,15 @@ set smartcase                   " ... unless they contain at least one capital l
 
 "" http://archive09.linux.com/feature/120126
 "" http://blogs.perl.org/users/su-shee/2012/04/a-little-help-in-vim.html
-set statusline=%F%m%r%h%w\ [GIT=%{GitBranchInfoTokens()[0]}]\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+function! FindSub()
+  let subpattern = '\(sub\|function\) \w\+'
+  let subline = search(subpattern, 'bnW')
+  if !subline
+    return ''
+  else
+    return matchstr(getline(subline), subpattern)
+  endif
+endfunction
+set statusline=%F%m%r%h%w\ \ %<%r%{FindSub()}\ \ [GIT=%{GitBranchInfoTokens()[0]}]\ \ [TYPE=%Y]\ \ [POS=%04l,%04v][%p%%]\ \ [LEN=%L]
 set laststatus=2
 
