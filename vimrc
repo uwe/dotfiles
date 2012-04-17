@@ -18,6 +18,12 @@ set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 
+"" easier navigation between split windows
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
+
 "" http://archive09.linux.com/feature/120126
 "" http://blogs.perl.org/users/su-shee/2012/04/a-little-help-in-vim.html
 function! FindSub()
