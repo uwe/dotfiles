@@ -38,3 +38,7 @@ endfunction
 set statusline=%F%m%r%h%w\ \ %<%r%{FindSub()}\ \ [GIT=%{GitBranchInfoTokens()[0]}]\ \ [TYPE=%Y]\ \ [POS=%04l,%04v][%p%%]\ \ [LEN=%L]
 set laststatus=2
 
+"" disable automatic comment insertion
+"" http://vim.wikia.com/wiki/Disable_automatic_comment_insertion
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
