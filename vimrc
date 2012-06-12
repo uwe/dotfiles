@@ -42,3 +42,6 @@ set laststatus=2
 "" http://vim.wikia.com/wiki/Disable_automatic_comment_insertion
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
+"" I want to see the comments :)
+colorscheme desert
+
