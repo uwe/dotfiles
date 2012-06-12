@@ -10,7 +10,7 @@
 	interactive = auto
 	status      = auto
 [user]
-	name  = Uwe
+	name  = Uwe Voelker
 	email = uwe@uwevoelker.de
 [push]
         default = tracking
