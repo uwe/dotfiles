@@ -42,6 +42,7 @@ set laststatus=2
 "" http://vim.wikia.com/wiki/Disable_automatic_comment_insertion
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
-"" I want to see the comments :)
-colorscheme desert
+"" smaller indentation for Ruby
+"" http://stackoverflow.com/questions/158968/changing-vim-indentation-behavior-by-file-type
+autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
 
