@@ -46,3 +46,6 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 "" http://stackoverflow.com/questions/158968/changing-vim-indentation-behavior-by-file-type
 autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
 
+set background=light
+colorscheme solarized
+
