@@ -1,0 +1,32 @@
+[alias]
+    st = status
+    ci = commit
+    co = checkout
+    br = branch
+[color]
+    branch      = auto
+    diff        = auto
+    ui          = auto
+    interactive = auto
+    status      = auto
+[user]
+    name  = Uwe Voelker
+    email = [% email +%]
+[push]
+    default = tracking
+[pull]
+    rebase = true
+[grep]
+    lineNumber     = true
+    extendedRegexp = true
+[log]
+    decorate = short
+[apply]
+    whitespace = nowarn
+[% IF context.xing %]
+[sendemail]
+	suppresscc = all
+	to         = jenkins@jenkins.env.xing.com
+	from       = [% email +%]
+[% END %]
+
