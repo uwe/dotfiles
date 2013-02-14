@@ -38,7 +38,7 @@ unless (@ARGV) {
 }
 
 
-my $tt = Template::Tiny->new(TRIM => 1);
+my $tt = Template::Tiny->new;
 
 foreach my $name (@ARGV) {
     unless (exists $APP{$name}) {

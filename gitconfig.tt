@@ -11,7 +11,7 @@
     status      = auto
 [user]
     name  = Uwe Voelker
-    email = [% email +%]
+    email = [% email %]
 [push]
     default = tracking
 [pull]
@@ -23,10 +23,9 @@
     decorate = short
 [apply]
     whitespace = nowarn
-[% IF context.xing %]
+[% IF context.xing -%]
 [sendemail]
 	suppresscc = all
 	to         = jenkins@jenkins.env.xing.com
-	from       = [% email +%]
-[% END %]
-
+	from       = [% email %]
+[% END -%]
