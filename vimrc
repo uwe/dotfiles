@@ -47,5 +47,5 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
 
 set background=light
-colorscheme solarized
+""colorscheme solarized
 
