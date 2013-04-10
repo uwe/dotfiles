@@ -12,6 +12,7 @@ use Template::Tiny;
 
 my %APP = (
     dzil => [qw/dzil/],
+    gem  => [qw/gemrc/],
     git  => [qw/gitconfig/],
     vim  => [qw/vim vimrc/],
 );
